@@ -3,7 +3,7 @@ import torch
 
 def test_data():
     train, test = corrupt_mnist()
-    assert len(train) == 30001, "Dataset did not have the correct number of samples"
+    assert len(train) == 30000, "Dataset did not have the correct number of samples"
     assert len(test) == 5000
     for dataset in [train, test]:
         for x, y in dataset:
